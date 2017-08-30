@@ -11,7 +11,10 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css')
-      .copy('semantic/dist/semantic.min.css','public/css/semantic.min.css')
-         .copy('semantic/dist/semantic.min.js','public/js/semantic.min.js');
+ mix.js('resources/assets/js/vendor/semantic/topbar.js', 'public/js')
+    .js('resources/assets/js/vendor/words.js', 'public/js')
+    .copy('semantic/dist/semantic.min.js','public/js')
+    .scripts(['public/js/semantic.min.js', 'public/js/words.js','public/js/topbar.js'], 'public/js/all.js')
+    .copy('semantic/dist/semantic.min.css','public/css')
+    .sass('resources/assets/sass/vendor/semantic/homepage.scss', 'public/css')
+    .styles(['public/css/semantic.min.css', 'public/css/homepage.css'], 'public/css/all.css');

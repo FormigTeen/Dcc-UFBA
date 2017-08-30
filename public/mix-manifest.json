@@ -1,6 +1,9 @@
 {
-    "/js/app.js": "/js/app.js",
-    "/css/app.css": "/css/app.css",
+    "/js/topbar.js": "/js/topbar.js",
+    "/css/homepage.css": "/css/homepage.css",
+    "/js/words.js": "/js/words.js",
+    "/js/semantic.min.js": "/js/semantic.min.js",
+    "/js/all.js": "/js/all.js",
     "/css/semantic.min.css": "/css/semantic.min.css",
-    "/js/semantic.min.js": "/js/semantic.min.js"
+    "/css/all.css": "/css/all.css"
 }
