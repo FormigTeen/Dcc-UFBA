@@ -1,0 +1,16 @@
+.news {
+  /*
+  .ui.column {
+    min-width: inherit;
+  }
+  */
+}
+
+.news .menu {
+  min-width: 228.750px;
+}
+
+.news .ui.column.four.wide {
+  min-width: 240px;
+}
+

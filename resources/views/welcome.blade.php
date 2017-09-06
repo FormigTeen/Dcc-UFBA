@@ -1,6 +1,8 @@
 @extends('layout.master')
-
-@section('content')
+@section('stylesheet')
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/compiled/home-page.css') }}">
+@endsection
+@section('external-home')
     @include('includes.cover.struct')
 
     @include('home.includes.quote')
@@ -20,25 +22,34 @@
             </div>
         </div>
     </div>
+@endsection
 
-    <!--
-    <div class="ui vertical stripe segment">
+@section('content')
+
+    <div class="ui vertical stripe segment news">
         <div class="ui grid container two column segment">
             <div class="ui column four wide">
                 <div class="ui vertical menu">
                     <a class="item">
-                        <h4 class="ui header">Promotions</h4>
-                        <p>Check out our new promotions</p>
+                        <div class="content">
+                            <h3 class="header">Header</h3>
+                            <p>Hoje é dia, veja que coisa interessante isso!!! Hahahaha eu sei que você é <asism class=""></asism></p>
+                        </div>
                     </a>
                     <a class="item active">
-                        <h4 class="ui header">Coupons</h4>
-                        <p>Check out our collection of coupons</p>
+                        <div class="content">
+                            <h3 class="header">Header</h3>
+                            <p>Hoje é dia</p>
+                        </div>
                     </a>
                     <a class="item">
-                        <h4 class="ui header">Rebates</h4>
-                        <p>Visit our rebate forum for information on claiming rebates</p>
+                        <div class="content">
+                            <h3 class="header">Header</h3>
+                            <p>Hoje é dia</p>
+                        </div>
                     </a>
                 </div>
+
                 <div class="ui pagination menu">
                     <a class="item active">
                         1
@@ -56,14 +67,27 @@
                         12
                     </a>
                 </div>
+
             </div>
-            <div class="ui column text">
-                <p>Veja isso.</p>
+            <div class="ui column twelve wide">
+                <div class="content">
+                    <h3 class="header">Header</h3>
+                    <p>Hoje é dia, veja que coisa interessante isso!!! Hahahaha eu sei que você é <asism class=""></asism></p>
+                    <div class="extra">
+                        <div class="ui right floated primary button">
+                            Saiba mais!
+                            <i class="right chevron icon"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    -->
 
     @include('includes.footer.footer')
 
+@endsection
+@section('script')
+    @parent
+    <script src="{{asset('js/compiled/home-page.js')}}"></script>
 @endsection

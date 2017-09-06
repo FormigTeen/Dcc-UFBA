@@ -11,10 +11,11 @@ let mix = require('laravel-mix');
  |
  */
 
- mix.js('resources/assets/js/vendor/semantic/topbar.js', 'public/js')
-    .js('resources/assets/js/vendor/words.js', 'public/js')
+ mix.js('resources/assets/js/vendor/semantic/topbar.js', 'public/js/vendor')
+    .js('resources/assets/js/vendor/words.js', 'public/js/vendor')
     .copy('semantic/dist/semantic.min.js','public/js')
-    .scripts(['public/js/semantic.min.js', 'public/js/words.js','public/js/topbar.js'], 'public/js/all.js')
+    .scripts(['public/js/semantic.min.js', 'public/js/vendor/words.js','public/js/vendor/topbar.js'], 'public/js/compiled/home-page.js')
     .copy('semantic/dist/semantic.min.css','public/css')
-    .sass('resources/assets/sass/vendor/semantic/homepage.scss', 'public/css')
-    .styles(['public/css/semantic.min.css', 'public/css/homepage.css'], 'public/css/all.css');
+    .sass('resources/assets/sass/vendor/semantic/homepage.scss', 'public/css/vendor')
+    .sass('resources/assets/sass/personal/news.scss', 'public/css/personal')
+    .styles(['public/css/semantic.min.css', 'public/css/vendor/homepage.css', 'public/css/personal/news.css'], 'public/css/compiled/home-page.css');
