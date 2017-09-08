@@ -26,63 +26,7 @@
 
 @section('content')
 
-    <div class="ui vertical stripe segment news">
-        <div class="ui grid container two column segment">
-            <div class="ui column four wide">
-                <div class="ui vertical menu">
-                    <a class="item">
-                        <div class="content">
-                            <h3 class="header">Header</h3>
-                            <p>Hoje é dia, veja que coisa interessante isso!!! Hahahaha eu sei que você é <asism class=""></asism></p>
-                        </div>
-                    </a>
-                    <a class="item active">
-                        <div class="content">
-                            <h3 class="header">Header</h3>
-                            <p>Hoje é dia</p>
-                        </div>
-                    </a>
-                    <a class="item">
-                        <div class="content">
-                            <h3 class="header">Header</h3>
-                            <p>Hoje é dia</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="ui pagination menu">
-                    <a class="item active">
-                        1
-                    </a>
-                    <div class="disabled item">
-                        ...
-                    </div>
-                    <a class="item">
-                        10
-                    </a>
-                    <a class="item">
-                        11
-                    </a>
-                    <a class="item">
-                        12
-                    </a>
-                </div>
-
-            </div>
-            <div class="ui column twelve wide">
-                <div class="content">
-                    <h3 class="header">Header</h3>
-                    <p>Hoje é dia, veja que coisa interessante isso!!! Hahahaha eu sei que você é <asism class=""></asism></p>
-                    <div class="extra">
-                        <div class="ui right floated primary button">
-                            Saiba mais!
-                            <i class="right chevron icon"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    @include('includes.news.model')
 
     @include('includes.footer.footer')
 

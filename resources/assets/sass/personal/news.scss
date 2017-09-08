@@ -2,17 +2,27 @@
 
   .menu {
     min-width: 228.750px;
+
+    a.item {
+      height: 150px;
+      max-height: 150px;
+      overflow: hidden;
+    }
   }
 
-  /*
-  .ui.column {
-    min-width: inherit;
-  }
-  */
 
   .ui.column.four.wide {
     min-width: 240px;
   }
 
+  .ui.column.twelve.wide {
+    width: calc(100% - 300px) !important;
+    min-width: 200px !important;
 
+    div.content {
+      max-height: 600px;
+      overflow: scroll;
+      margin-bottom: 25px;
+    }
+  }
 }
