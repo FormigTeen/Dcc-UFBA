@@ -8,6 +8,10 @@
   overflow: hidden;
 }
 
+.news .menu .pagination {
+  min-width: 0px;
+}
+
 .news .ui.column.four.wide {
   min-width: 240px;
 }

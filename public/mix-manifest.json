@@ -2,7 +2,7 @@
     "/js/vendor/topbar.js": "/js/vendor/topbar.js",
     "/css/vendor/homepage.css": "/css/vendor/homepage.css",
     "/css/personal/news.css": "/css/personal/news.css",
-    "/js/vendor/words.js": "/js/vendor/words.js",
+    "/js/personal/words.js": "/js/personal/words.js",
     "/js/semantic.min.js": "/js/semantic.min.js",
     "/js/compiled/home-page.js": "/js/compiled/home-page.js",
     "/css/semantic.min.css": "/css/semantic.min.css",
