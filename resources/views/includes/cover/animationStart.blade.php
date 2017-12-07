@@ -5,6 +5,6 @@
                 DCC - UFBA
             </h1>
         </div>
-        <h2>Departamento de Ciência da Computação</h2>
+        <h2>Instituto de Computação e Tecnologia da UFBA</h2>
     </div>
 </div>

@@ -60,46 +60,50 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
-/******/ ({
-
-/***/ 4:
+/******/ ([
+/* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(5);
+__webpack_require__(1);
+__webpack_require__(2);
+module.exports = __webpack_require__(3);
 
 
 /***/ }),
-
-/***/ 5:
+/* 1 */
 /***/ (function(module, exports) {
 
-var things = ['coding', 'knitting', 'drawing', 'drawing', 'drawing', 'drawing', 'drawing', 'designing', 'planning', 'writing', 'writing', 'writing', 'writing', 'writing', 'writing', 'writing', 'programming', 'programming', 'programming', 'programming', 'programming', 'concluding', 'programming', 'thinking', 'painting', 'painting', 'painting', 'painting', 'painting', 'sewing', 'sketching', 'ruminating', 'deliberating', 'pondering', 'contemplating', 'abstracting', 'abstracting', 'abstracting', 'abstracting', 'abstracting', 'abstracting', 'optimising', 'optimising', 'optimising', 'optimising', 'optimising', 'optimising', 'refactoring', 'refactoring', 'refactoring', 'objectifying', 'simplifying', 'decoupling', 'debugging', 'debugging', 'debugging', 'debugging', 'debugging', 'debugging', 'configuring', 'streamlining', 'searching', 'tweaking', 'editing'];
+$(document).ready(function () {
 
-var junk = ['#', '@', '%', '*', '&amp;', '&lt;', '&gt;', '_', '=', '+', '[', ']', '|', '-', '!', '?', 'X'];
+    // fix menu when passed
+    $('.masthead').visibility({
+        once: false,
+        onBottomPassed: function onBottomPassed() {
+            $('.fixed.menu').transition('fade in');
+        },
+        onBottomPassedReverse: function onBottomPassedReverse() {
+            $('.fixed.menu').transition('fade out');
+        }
+    });
 
-function randomInt(min, max) {
-    return Math.round(min + Math.random() * (max - min));
-}
+    // create sidebar and attach to menu open
+    $('.ui.sidebar').sidebar('attach events', '.toc.item');
+});
 
-(function tick() {
-    var txt = things[randomInt(0, things.length - 1)];
-    var antTxt = "<h1 class=\"ui inverted header\">";
-    var depTxt = "</h1>";
-    var chars = txt.split('');
-    var glitch = randomInt(0, 3);
-    for (var i = 0; i < glitch; i++) {
-        chars[randomInt(0, chars.length - 1)] = junk[randomInt(0, junk.length - 1)];
-    }
-    txt = chars.join('');
-    txt = antTxt.concat(txt, depTxt);
-    var x = document.getElementById('ing');
-    x.innerHTML = txt;
-    window.setTimeout(tick, randomInt(16, 400));
-})();
+/***/ }),
+/* 2 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
-
-/******/ });
+/******/ ]);

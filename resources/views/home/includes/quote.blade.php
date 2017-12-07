@@ -8,7 +8,7 @@
                 <div class="ui center aligned stackable grid container text">
                     <div class="ui row container">
                         <p>
-                            <img src="https://scontent.frec7-1.fna.fbcdn.net/v/t1.0-9/19366470_809547589199020_6045561720722596918_n.jpg?oh=931ff60e5c96d694182085a74afbcf4b&oe=5A263868" class="ui avatar tiny image">
+                            <img src="https://scontent.fbhz1-1.fna.fbcdn.net/v/t1.0-9/19366470_809547589199020_6045561720722596918_n.jpg?oh=55c489ab63d5717e375d14a46b848fdf&oe=5AC46C68" class="ui avatar tiny image">
                         </p>
                     </div>
                     <div class="ui row container">

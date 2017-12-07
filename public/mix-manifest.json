@@ -1,10 +1,10 @@
 {
-    "/js/vendor/topbar.js": "/js/vendor/topbar.js",
-    "/css/vendor/homepage.css": "/css/vendor/homepage.css",
+    "/js/personal/topbar.js": "/js/personal/topbar.js",
+    "/css/personal/homepage.css": "/css/personal/homepage.css",
     "/css/personal/news.css": "/css/personal/news.css",
     "/js/personal/words.js": "/js/personal/words.js",
     "/js/semantic.min.js": "/js/semantic.min.js",
-    "/js/compiled/home-page.js": "/js/compiled/home-page.js",
+    "/js/all.js": "/js/all.js",
     "/css/semantic.min.css": "/css/semantic.min.css",
-    "/css/compiled/home-page.css": "/css/compiled/home-page.css"
+    "/css/all.css": "/css/all.css"
 }

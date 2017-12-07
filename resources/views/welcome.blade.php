@@ -1,7 +1,4 @@
 @extends('layout.master')
-@section('stylesheet')
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/compiled/home-page.css') }}">
-@endsection
 @section('external-home')
     @include('includes.cover.struct')
 
@@ -26,12 +23,6 @@
 
 @section('content')
 
-    @include('includes.news.model')
-
     @include('includes.footer.footer')
 
-@endsection
-@section('script')
-    @parent
-    <script src="{{asset('js/compiled/home-page.js')}}"></script>
 @endsection

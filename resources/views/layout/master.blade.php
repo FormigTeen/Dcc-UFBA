@@ -10,6 +10,7 @@
     <!-- Fonts -->
     @section('stylesheet')
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/all.css') }}">
     @show
 </head>
 <body>
@@ -27,6 +28,7 @@
 
     @section('script')
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="{{asset('js/all.js')}}"></script>
     @show
 
 </body>

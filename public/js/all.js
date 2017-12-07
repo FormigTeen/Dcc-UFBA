@@ -71,49 +71,49 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */,
-/* 1 */,
-/* 2 */,
-/* 3 */
+/******/ ({
+
+/***/ 4:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(4);
+module.exports = __webpack_require__(5);
 
 
 /***/ }),
-/* 4 */
+
+/***/ 5:
 /***/ (function(module, exports) {
 
-var things = ['coding', 'ufba', 'grupro', 'graco', 'dcc', 'indigente', 'maratona', 'google', 'ieeeXtreme', 'math', 'complexity', 'perfomance', 'first', 'sti', 'networking', 'web', 'programming', 'infojr', 'semcomp', 'computer', 'circuits', 'robot', 'robocode', 'thinking', 'create', 'inovation', 'future', 'feeling', 'database', 'data', 'search', 'crawler', 'manchine', 'learn', 'powerful', 'opensource', 'abstracting', 'beta', 'binary', 'number', 'theory', 'optimising', 'language', 'pipeline', 'sort', 'graph', 'tree', 'refactoring', 'struct', 'help', 'objectifying', 'simplifying', 'decoupling', 'debugging', 'intelligence', 'artifical', 'error', 'found', 'shell', 'configuring', 'streamlining', 'searching', 'tweaking', 'editing', 'root'];
+var things = ['coding', 'knitting', 'drawing', 'drawing', 'drawing', 'drawing', 'drawing', 'designing', 'planning', 'writing', 'writing', 'writing', 'writing', 'writing', 'writing', 'writing', 'programming', 'programming', 'programming', 'programming', 'programming', 'concluding', 'programming', 'thinking', 'painting', 'painting', 'painting', 'painting', 'painting', 'sewing', 'sketching', 'ruminating', 'deliberating', 'pondering', 'contemplating', 'abstracting', 'abstracting', 'abstracting', 'abstracting', 'abstracting', 'abstracting', 'optimising', 'optimising', 'optimising', 'optimising', 'optimising', 'optimising', 'refactoring', 'refactoring', 'refactoring', 'objectifying', 'simplifying', 'decoupling', 'debugging', 'debugging', 'debugging', 'debugging', 'debugging', 'debugging', 'configuring', 'streamlining', 'searching', 'tweaking', 'editing'];
+
 var junk = ['#', '@', '%', '*', '&amp;', '&lt;', '&gt;', '_', '=', '+', '[', ']', '|', '-', '!', '?', 'X'];
 
 function randomInt(min, max) {
-  return Math.round(min + Math.random() * (max - min));
+    return Math.round(min + Math.random() * (max - min));
 }
 
 (function tick() {
-
-  var txt = things[randomInt(0, things.length - 1)];
-  var chars = txt.split('');
-  var glitch = randomInt(0, txt.length / 3);
-  for (var i = 0; i < glitch; i++) {
-    chars[randomInt(0, chars.length - 1)] = junk[randomInt(0, junk.length - 1)];
-  }
-  txt = chars.join('');
-  var x = document.getElementById('ing');
-  var ini = "<h1 class=\"ui inverted header\">";
-  var end = "</h1>";
-  txt = ini.concat(txt, end);
-  x.innerHTML = txt;
-  window.setTimeout(tick, randomInt(16, 1000));
+    var txt = things[randomInt(0, things.length - 1)];
+    var antTxt = "<h1 class=\"ui inverted header\">";
+    var depTxt = "</h1>";
+    var chars = txt.split('');
+    var glitch = randomInt(0, 3);
+    for (var i = 0; i < glitch; i++) {
+        chars[randomInt(0, chars.length - 1)] = junk[randomInt(0, junk.length - 1)];
+    }
+    txt = chars.join('');
+    txt = antTxt.concat(txt, depTxt);
+    var x = document.getElementById('ing');
+    x.innerHTML = txt;
+    window.setTimeout(tick, randomInt(16, 400));
 })();
 
 /***/ })
-/******/ ]);
+
+/******/ });
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -184,7 +184,8 @@ function randomInt(min, max) {
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(1);
-module.exports = __webpack_require__(2);
+__webpack_require__(2);
+module.exports = __webpack_require__(3);
 
 
 /***/ }),
@@ -210,6 +211,12 @@ $(document).ready(function () {
 
 /***/ }),
 /* 2 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 3 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

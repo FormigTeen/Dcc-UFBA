@@ -8,6 +8,8 @@ function randomInt(min, max) {
 
 (function tick() {
     var txt = things[randomInt(0, things.length-1)];
+    var antTxt = "<h1 class=\"ui inverted header\">";
+    var depTxt = "</h1>";
     var chars = txt.split('');
     var glitch = randomInt(0, 3);
     for (var i = 0; i < glitch; i++)
@@ -15,6 +17,7 @@ function randomInt(min, max) {
         chars[randomInt(0, chars.length-1)] = junk[randomInt(0, junk.length-1)];
     }
     txt = chars.join('');
+    txt = antTxt.concat(txt, depTxt);
     var x = document.getElementById('ing');
     x.innerHTML = txt;
     window.setTimeout(tick, randomInt(16,400));
